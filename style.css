@@ -1,0 +1,106 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(10, 20, 45, 0.95),
+    rgba(20, 50, 100, 0.9),
+    rgba(15, 35, 80, 0.85)
+  );
+  color: #000;
+}
+
+header {
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    rgba(10, 20, 45, 0.95),
+    rgba(20, 50, 100, 0.9),
+    rgba(15, 35, 80, 0.85)
+  );
+  backdrop-filter: blur(6px);
+  color: #d6e6ff;
+  padding: 2.5rem 1rem;
+  box-shadow: 0 4px 25px rgba(0, 0, 50, 0.6);
+}
+
+.name {
+  color: #5aaaff; /* calm electric blue accent */
+  text-shadow: 0 0 10px rgba(90, 170, 255, 0.5);
+}
+
+.tagline {
+  color: #333;
+  font-weight: 300;
+}
+
+
+  color: #dce4ff;
+  padding: 2rem 1rem;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
+}
+
+  color: #e0e6ff;
+  padding: 2rem 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+  color: white;
+  padding: 2rem 1rem;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid white;
+  object-fit: cover;
+}
+
+.name {
+  color: #0076ff;
+}
+
+section {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  border-bottom: 2px solid #5aaaff;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.project {
+    background: linear-gradient(
+    135deg,
+    rgba(20, 60, 130, 0.95),
+    rgba(30, 80, 130, 0.9),
+    rgba(30, 100, 130, 0.85)
+  );
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.project a {
+  color: #5aaaff;
+  text-decoration: none;
+}
+
+ul {
+  list-style: square inside;
+  padding-left: 0;
+}
+
+footer {
+  text-align: center;
+  background: #222;
+  color: white;
+  padding: 1rem;
+  font-size: 0.9rem;
+}

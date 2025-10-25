@@ -1,5 +1,4 @@
-// Scroll animations
-// Skills tab switching
+
 const tabButtons = document.querySelectorAll('.tab-button');
 const tabContents = document.querySelectorAll('.tab-content');
 
@@ -7,14 +6,14 @@ tabButtons.forEach(btn => {
     btn.addEventListener('click', () => {
         const target = btn.dataset.tab;
 
-        // Remove active from all buttons
+
         tabButtons.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
 
-        // Show the target tab content and hide the others
+   
         tabContents.forEach(tc => {
             if(tc.id === target) {
-                tc.style.display = 'flex'; // flex for layout
+                tc.style.display = 'flex'; 
             } else {
                 tc.style.display = 'none';
             }
@@ -34,7 +33,7 @@ const observer = new IntersectionObserver(entries => {
 
 sections.forEach(section => observer.observe(section));
 
-// Language switcher
+
 const enBtn = document.getElementById('en-btn');
 const czBtn = document.getElementById('cz-btn');
 
@@ -52,7 +51,7 @@ function switchLanguage(lang){
     }
 }
 
-// Initialize default language
+
 switchLanguage('en');
 
 enBtn.addEventListener('click', () => switchLanguage('en'));

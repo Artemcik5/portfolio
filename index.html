@@ -1,57 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Coding Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artem Portfolio</title>
+    <!-- IBM Plex Mono Font -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <img src="images/profile.png" alt="My photo" class="profile-pic" />
-    <h1>Hello, I'm <span class="name" style=color:"#1E90FF">Artem!</span></h1>
-  </header>
+    <!-- Language Switcher -->
+  
+    <div class="language-switcher">
+        <button id="en-btn" class="active">EN</button>
+        <button id="cz-btn">CZ</button>
+    </div>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      Hi! I'm Artem, and I've been interested in tech, cybersecurity, and programming ever since I was a kid. I enjoy making
-      small games, websites, and projects in general, to better my skills. I love problem solving and creating cool projects with code!
+    <!-- Navigation -->
+<nav>
+    <div class="nav-blur-panel">
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <!-- Sections -->
+<section id="about" class="section">
+    <h1 class="glow-text" data-en="Hello, I'm Artem." data-cz="Ahoj, jmenuji se Artem">Hello, I'm Artem.</h1>
+    <p data-en="I'm a passionate developer exploring programming, games, and cybersecurity. I love building interactive projects and learning new technologies every day." 
+       data-cz="Jsem nadšený vývojář, který se zajímá o programování, hry a kybernetickou bezpečnost. Rád vytvářím interaktivní projekty a učím se nové technologie každý den.">
+       I'm a passionate developer exploring programming, games, and cybersecurity. I love building interactive projects and learning new technologies every day.
     </p>
-  </section>
+</section>
 
-  <section id="projects">
-    <h2>My Projects</h2>
-    <div class="project">
-      <h3>🎮 Mini Math Game</h3>
-      <p>A fun quiz that helps practice addition and subtraction.</p>
-      <a href="#" target="_blank">View Project</a>
+  
+  
+
+    <section id="projects" class="section">
+    <h2 class="glow-text" data-en="Projects" data-cz="Projekty">Projects</h2>
+    <div class="projects-container">
+        <div class="project-card">
+            <div class="project-header">
+                <h3>Math Practice Game</h3>
+                <span class="icon"></span> <!-- placeholder icon -->
+            </div>
+            <p data-en="A simple math practice game to improve arithmetic skills." 
+               data-cz="Jednoduchá hra na procvičování matematiky pro zlepšení aritmetických dovedností.">
+               A simple math practice game to improve arithmetic skills.
+            </p>
+            <div class="project-links">
+                <a href="https://artemcik5.github.io/mathgame/" target="_blank" class="glow-link">Live Demo</a>
+                <a href="https://github.com/Artemcik5/mathgame/tree/main?tab=readme-ov-file" target="_blank" class="glow-link">Source Code</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-header">
+                <h3 >Username Lookup</h3>
+                <span class="icon"></span>
+            </div>
+            <p data-en="A tool to quickly check what platforms your accounts may be on." 
+               data-cz="Nástroj pro rychlé ověření dostupnosti uživatelských jmen.">
+               A tool to quickly check what platforms your accounts may be on.
+            </p>
+            <div class="project-links">
+                <a href="https://github.com/Artemcik5/Simple-Username-Lookup" target="_blank" class="glow-link">Source Code</a>
+            </div>
+        </div>
     </div>
+</section>
 
-    <div class="project">
-      <h3>🌎 My First Website</h3>
-      <p>A simple personal homepage I made using HTML and CSS.</p>
-      <a href="#" target="_blank">View Project</a>
+
+    <section id="skills" class="section">
+    <h2 class="glow-text" data-en="Skills" data-cz="Dovednosti">Skills</h2>
+    
+    <!-- Tabs -->
+    <div class="skills-tabs">
+    <button class="tab-button active" data-tab="languages">Languages</button>
+    <button class="tab-button" data-tab="cybersecurity">CyberSecurity</button>
+</div>
+
+
+    <!-- Tab contents -->
+    <!-- Languages Tab -->
+<div class="tab-content" id="languages">
+    <div class="skill-card">
+        <h3>LuaU</h3>
+        <p>Advanced</p>
+        <a href="https://artemcik5.github.io/mathgame/" target="_blank" class="glow-link">Example</a>
     </div>
-  </section>
+    <div class="skill-card">
+        <h3>Python</h3>
+        <p>Beginner</p>
+        <a href="#" class="glow-link">Example</a>
+    </div>
+    <div class="skill-card">
+        <h3>HTML+CSS</h3>
+        <p>Beginner</p>
+        <a href="#" class="glow-link">Example</a>
+    </div>
+</div> <!-- close languages here -->
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML & CSS</li>
-      <li>Scratch</li>
-      <li>Python (beginner)</li>
-    </ul>
-  </section>
+<!-- CyberSecurity Tab -->
+<div class="tab-content" id="cybersecurity" style="display:none;">
+    <div class="skill-card">
+        <h3>Placeholder</h3>
+        <p>Intermediate</p>
+        <span class="certificate">Certificate</span>
+    </div>
+    <div class="skill-card">
+        <h3>Placeholder</h3>
+        <p>Beginner</p>
+        <span class="certificate">Certificate</span>
+    </div>
+    <div class="skill-card">
+        <h3>Placeholder</h3>
+        <p>Intermediate</p>
+        <span class="certificate">Certificate</span>
+    </div>
+</div>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:artemtime7@gmail.com">artemtime7@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/artemcik5" target="_blank">@Artemcik5</a></p>
-  </section>
 
-  <footer>
-    <p>© 2025 Artem’s Portfolio | Built with 💻 & ❤️</p>
-  </footer>
+    <section id="contact" class="section">
+        <h2 class="glow-text" data-en="Contact" data-cz="Kontakt">Contact</h2>
+        <p data-en="Email : artemtime7@gmail.com" data-cz="Email : artemtime7@gmail.com"></p>
+<p id="github" 
+   data-en='Github: <a href="https://github.com/Artemcik5" target="_blank">@Artemcik5</a>' 
+   data-cz='Github: <a href="https://github.com/Artemcik5" target="_blank">@Artemcik5</a>'>
+</p>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -52,7 +52,29 @@ function switchLanguage(lang){
 }
 
 
-switchLanguage('en');
+switchLanguage('cz');
+
+const shapesContainer = document.querySelector('.floating-shapes');
+const shapeTypes = ['shape-square', 'shape-circle', 'shape-triangle'];
+const numShapes = 12; 
+
+for (let i = 0; i < numShapes; i++) {
+  const box = document.createElement('div');
+  box.classList.add('floating-box');
+
+
+  const shape = shapeTypes[Math.floor(Math.random() * shapeTypes.length)];
+  box.classList.add(shape);
+
+
+  box.style.top = Math.random() * 90 + 'vh'; 
+  box.style.left = Math.random() * 90 + 'vw';
+
+  const duration = (5 + Math.random() * 10).toFixed(2);
+  box.style.animationDuration = `${duration}s`;
+
+  shapesContainer.appendChild(box);
+}
 
 enBtn.addEventListener('click', () => switchLanguage('en'));
 czBtn.addEventListener('click', () => switchLanguage('cz'));

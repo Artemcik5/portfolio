@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+</details><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,125 +10,94 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="box">
+  <div class="floating-box"></div>
+  <div class="floating-box"></div>
+  <div class="floating-box"></div>
+  <div class="floating-box"></div>
+</div>
 
-  
+    <div class="box">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+<div class=everything>
     <div class="language-switcher">
-        <button id="en-btn" class="active">EN</button>
-        <button id="cz-btn">CZ</button>
+        <button id="cz-btn" class="active">CZ</button>
+        <button id="en-btn">EN</button>
     </div>
 
 
 <nav>
     <div class="nav-blur-panel">
         <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" data-en="About Me" data-cz = "O mně">About Me</a></li>
+            <li><a href="#skills" data-en="Skills" data-cz = "Dovednosti">Skills</a></li>
+            <li><a href="#interests" data-en="Interests" data-cz = "Zájmy">Contact</a></li>
+            <li><a href="#projects" data-en="Projects" data-cz = "Projekty">Projects</a></li>
         </ul>
     </div>
 </nav>
-
-
+      
 <section id="about" class="section">
-    <h1 class="glow-text" data-en="Hello, I'm Artem." data-cz="Ahoj, jmenuji se Artem">Hello, I'm Artem.</h1>
-    <p data-en="I'm a passionate developer exploring programming, games, and cybersecurity. I love building interactive projects and learning new technologies every day." 
-       data-cz="Jsem nadšený vývojář, který se zajímá o programování, hry a kybernetickou bezpečnost. Rád vytvářím interaktivní projekty a učím se nové technologie každý den.">
-       I'm a passionate developer exploring programming, games, and cybersecurity. I love building interactive projects and learning new technologies every day.
+    <h1 class="glow-text" data-en="Hello, I'm Artem." data-cz="O mně">Hello, I'm Artem</h1>
+    <p data-en="My name is Artem Bobik, I am 14 years old and I've been interested in technology and all else related to it since a very young age. I am interested in computers, phones, operating systems, programming and game development. In addition to technology, I also enjoy sciences such as biology, chemistry, and physics, because I like to learn how even the simplest things work." 
+       data-cz="Jmenuji se Artem Bobik, je mi 14 let a už velmi dlouho mě baví technika a vše s ní spojené.
+Zajímám se o počítače, telefony, operační systémy, programování a vývoj her. Kromě techniky mě také baví vědy jako biologie, chemie a fyzika, protože rád poznávám, jak i ty nejjednodušší věci fungují.
+">
     </p>
 </section>
 
-  
-  
-
+  <section id="skills" class="section">
+    <h1 class="glow-text" data-en="Technical skills" data-cz="Technické dovednosti">Technical skills</h1>
+    <p data-en="In programming, I am best at LuaU, which I use for game development, I prefer to program everything else in Python, and I use HTML and CSS for websites. I like playing with different operating systems, mainly versions of Windows and Linux distributions, in which I like to play with the command line. I used and did various tests with an Arduino Uno, but lately I have been more interested in software. I am also growing more interested in artificial intelligence, mainly running various models locally via the Ollama program." 
+       data-cz="V programování se nejlépe vyznám v LuaU, což využívám pro vývoj her na platformě roblox, vše ostatní nejradši programuji v Pythonu a na webové stránky používám HTML a CSS. Rád zkouším a zahrávám si s různými operačními systémy, hlavně verzemi Windows a distribucemi Linuxu, ve kterých si rád zahraju s příkazovým řádkem. Také jsem jsem zkoušel Ardu prostředí, přesněji Arduino Uno, při čemž jsem se naučil pájet, ale poslední dobou se spíše zajímám o software. Také se více zabývám umělou inteligencí, hlavně lokálním provozováním různých modelů přes program Ollama.
+">
+    </p>
+</section>
+  <section id="interests" class="section">
+    <h1 class="glow-text" data-en="Other interests" data-cz="Jiné zájmy">Other interests</h1>
+    <p data-en="Other interests of mine definitely include languages, 3D printing and video games. I am currently fluent in 4 languages: Czech, English, Russian and Ukrainian, I am also learning Hungarian, German and the basics of Chinese. I have been interested in 3D printing for about 2 years and have already worked with three different printers. I have been playing video games since I was a child and I think they had the biggest influence on me starting to learn game development and programming." 
+       data-cz="Mezi další z mých zájmů rozhodně patří jazyky, 3D tisk a videohry. Jazyků umím současně 4 a to češtinu, angličtinu, ruštinu a ukrajinštinu, dále se také učím maďarštinu, ňemčinu a základy čínštiny. 3D tiskem se zabývám už přibližně 2 roky a pracoval jsem již s třemi různými tiskárnami. Videohry hraju již od mala a myslím si, že měly největší vliv na to, abych se začal učit vývoj her a programování."
+>
+  </section>
+    </div>
     <section id="projects" class="section">
     <h2 class="glow-text" data-en="Projects" data-cz="Projekty">Projects</h2>
-    <div class="projects-container">
-        <div class="project-card">
-            <div class="project-header">
-                <h3>Math Practice Game</h3>
-                <span class="icon"></span>
-            </div>
-            <p data-en="A simple math practice game to improve arithmetic skills." 
-               data-cz="Jednoduchá hra na procvičování matematiky pro zlepšení aritmetických dovedností.">
-               A simple math practice game to improve arithmetic skills.
+      <br>
+    <div class="details-accordion">
+        <details>
+            <summary>
+                <span>Local STT</span>
+                <span class="arrow">◂</span>
+            </summary>
+            <p data-cz="Funkce programu spočívá v tom, že zadržíte jednu klávesu (Třeba F4), mluvíte, nahraje se audio, to se transkribuje v text a uloží v proměnné a zmáčknutím jiné zvolené klávesy, (Třeba F5) se vloží text z proměnné. Nejvíce mě k zahájení tohoto projektu inspirovalo, jak normalizovaný byl sběr dat lidí a případné ukládání hodin hlasu uživatelů nebylo něco, s čím bych se smířil. Řešení se ukázalo jako docela dobré, projekt, i když stále v rané fázi, je již funkční a dovedu si představit, že ho budu používat já i další lidé. <a href='https://github.com/Artemcik5/Local-STT'>Github</a>"
+ data-en="The program's function is that you hold a keybind, (f4 for example) and it records your voice, after that it transcribes it, and stores it in a variable. Pressing another set keybind, (f5 for example) pastes the text from the variable. What inspired me most to start this project was how normalised data collection of people or potential storage of hours of the voice of users was not something that I could be fine with. The project, though still in an early stage, is fully functional and I could see me and others using this program <a href='https://github.com/Artemcik5/Local-STT'>Github</a>">
             </p>
-            <div class="project-links">
-                <a href="https://artemcik5.github.io/mathgame/" target="_blank" class="glow-link">Live Demo</a>
-                <a href="https://github.com/Artemcik5/mathgame/tree/main?tab=readme-ov-file" target="_blank" class="glow-link">Source Code</a>
-            </div>
-        </div>
+        </details>
 
-        <div class="project-card">
-            <div class="project-header">
-                <h3 >Username Lookup</h3>
-                <span class="icon"></span>
-            </div>
-            <p data-en="A tool to quickly check what platforms your accounts may be on." 
-               data-cz="Nástroj pro rychlé ověření dostupnosti uživatelských jmen.">
-               A tool to quickly check what platforms your accounts may be on.
+        <details>
+            <summary>
+                <span>Simple Username Lookup</span>
+                <span class="arrow">◂</span>
+            </summary>
+            <p data-cz="Program vykonával vyhledávání po různých platformách jako Youtube a Github, zjišťoval jestli uživatel se zadaným jménem existoval nebo ne a dal výsledky z vyhledávání. Jeden z prvních projektů, který jsem dělal v pythonu bez žádných instrukcí a asi jedna z těžších voleb na první projekt v pythonu. Projekt byl podle mě velký úspěch a dostal jsem ještě větší motivaci se zlepšovat v programování. <a href='https://github.com/Artemcik5/Simple-Username-Lookup'>Github</a>"
+ data-en="The program performed a search on various platforms such as Youtube and Github, checked whether the user with the entered name existed or not and returned the search results. One of the first projects I did in python without a tutorial and probably one of the harder choices for a first project in python. The project was a great success in my opinion and gave me even more motivation to improve my programming. <a href='https://github.com/Artemcik5/Simple-Username-Lookup'>Github</a>">
             </p>
-            <div class="project-links">
-                <a href="https://github.com/Artemcik5/Simple-Username-Lookup" target="_blank" class="glow-link">Source Code</a>
-            </div>
-        </div>
+        </details>
     </div>
 </section>
-
-
-    <section id="skills" class="section">
-    <h2 class="glow-text" data-en="Skills" data-cz="Dovednosti">Skills</h2>
-    
-    <div class="skills-tabs">
-    <button class="tab-button active" data-tab="languages">Languages</button>
-    <button class="tab-button" data-tab="cybersecurity">CyberSecurity</button>
-</div>
-
-
-<div class="tab-content" id="languages">
-    <div class="skill-card">
-        <h3>LuaU</h3>
-        <p>Advanced</p>
-        <a href="https://www.roblox.com/games/100821136942707/Music-Player" target="_blank" class="glow-link">Example</a>
+  </div>
     </div>
-    <div class="skill-card">
-        <h3>Python</h3>
-        <p>Beginner</p>
-        <a href="https://github.com/Artemcik5/Simple-Username-Lookup" class="glow-link">Example</a>
-    </div>
-    <div class="skill-card">
-        <h3>HTML+CSS</h3>
-        <p>Beginner</p>
-        <a href="https://artemcik5.github.io/mathgame/" class="glow-link">Example</a>
-    </div>
-</div>
-      
-<div class="tab-content" id="cybersecurity" style="display:none;">
-    <div class="skill-card">
-        <h3>Placeholder</h3>
-        <p>Intermediate</p>
-        <span class="certificate">Certificate</span>
-    </div>
-    <div class="skill-card">
-        <h3>Placeholder</h3>
-        <p>Beginner</p>
-        <span class="certificate">Certificate</span>
-    </div>
-    <div class="skill-card">
-        <h3>Placeholder</h3>
-        <p>Intermediate</p>
-        <span class="certificate">Certificate</span>
-    </div>
-</div>
-
-
-    <section id="contact" class="section">
-        <h2 class="glow-text" data-en="Contact" data-cz="Kontakt">Contact</h2>
-        <p data-en="Email : artemtime7@gmail.com" data-cz="Email : artemtime7@gmail.com"></p>
-<p id="github" 
-   data-en='Github: <a href="https://github.com/Artemcik5" target="_blank">@Artemcik5</a>' 
-   data-cz='Github: <a href="https://github.com/Artemcik5" target="_blank">@Artemcik5</a>'>
-</p>
+      </div>
     <script src="script.js"></script>
 </body>
 </html>
